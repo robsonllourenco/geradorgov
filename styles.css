@@ -1,0 +1,176 @@
+/* Estilo básico e configurações de layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 20px; /* Aumentado para mais conforto em telas maiores */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Largura máxima para desktop */
+    width: 100%; /* Ajuste automático da largura em mobile */
+    margin: 10px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #d32027;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #555;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-style: normal;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px; /* Mais espaço para melhorar a usabilidade em dispositivos móveis */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem; /* Levemente maior para melhor leitura em mobile */
+}
+
+button {
+    width: 100%;
+    padding: 10px; /* Aumentado para maior facilidade de toque em dispositivos móveis */
+    background: #d32027;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #b31c21;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.output {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+#copyButton {
+    background: #d32027;
+}
+
+#copyButton:hover {
+    background: #b31c21;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #d32027;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin: -7px 0;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Estilos de media queries para garantir responsividade */
+
+/* Para tablets */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    select, input, button {
+        font-size: 0.95rem;
+        padding: 9px;
+    }
+
+    .output {
+        font-size: 0.95rem;
+    }
+}
+
+/* Para dispositivos móveis (smartphones) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        max-width: 95%;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    select, input, button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .output {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de Gov</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Gerar Gov</h1>
+            <h3>MEDICAL CENTER / SAMU</h3>
+        </div>
+        <form id="govForm">
+            <div class="form-group">
+                <label for="govType">Selecione o tipo de Gov:</label>
+                <select id="govType">
+                    <option value="recrutamento">Recrutamento</option>
+                    <option value="vendas">Vendas de Bandagens</option>
+                    <option value="exameAP">Exame AP</option>
+                    <option value="avisochamados">Aviso Local de Chamados</option>
+                </select>
+            </div>
+            <button type="button" onclick="gerarGov()">Gerar Gov</button>
+        </form>
+
+        <h2>Gov Gerado:</h2>
+        <div id="govGerado" class="output"></div>
+        <button id="copyButton" onclick="copiarGov()" style="display: none;">Copiar Gov</button>
+    </div>
+
+    <div id="popup" class="popup">Gov copiado! Só colar no F8 no Medical Center</div>
+
+    <footer>
+        <p>Desenvolvido por Ministro [273]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
